@@ -66,14 +66,14 @@ const serializeUsers = (user) => ({
 /* MSW REST API Handlers */
 
 export const handlers = [
-  rest.get('/fakeApi/getUsers', function (req, res, ctx) {
+  rest.get('/cupist/build/fakeApi/getUsers', function (req, res, ctx) {
     const user = db.user.getAll().map(serializeUsers)
     return res(ctx.delay(ARTIFICIAL_DELAY_MS), ctx.json(db.user.getAll()))
   }),
-  rest.get('/fakeApi/getProfile', function (req, res, ctx) {
+  rest.get('/cupist/build/fakeApi/getProfile', function (req, res, ctx) {
     return res(ctx.delay(ARTIFICIAL_DELAY_MS), ctx.json(db.profile.getAll()))
   }),
-  rest.post('/fakeApi/like', (req, res, ctx) => {
+  rest.post('/cupist/build/fakeApi/like', (req, res, ctx) => {
     const destId = req.body.destId
     const srcId = req.body.srcId
     const user = db.user.findFirst({
@@ -106,7 +106,7 @@ export const handlers = [
         ctx.json({user:serializeUsers(updatedUser), profile:serializeUsers(updatedProfile)}),
       )
   }),
-  rest.post('/fakeApi/decision', (req, res, ctx) => {
+  rest.post('/cupist/build/fakeApi/decision', (req, res, ctx) => {
     const destId = req.body.destId
     const srcId = req.body.srcId
     const profile = db.profile.findFirst({
@@ -127,7 +127,7 @@ export const handlers = [
         ctx.json(serializeUsers(updatedProfile)),
       )
   }),
-  rest.post('/fakeApi/save', (req, res, ctx) => {
+  rest.post('/cupist/build/fakeApi/save', (req, res, ctx) => {
     const myData = req.body.myData
     const srcId = req.body.id
     const profile = db.profile.findFirst({
@@ -150,7 +150,7 @@ export const worker = setupWorker(...handlers)
 
 /* Mock Websocket Setup */
 
-const socketServer = new MockSocketServer('ws://localhost')
+const socketServer = new MockSocketServer('ws://https://kwonbongjun.github.io/cupist/build/#/')
 
 let currentSocket
 

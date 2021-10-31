@@ -13,15 +13,15 @@ const initialState = profileAdapter.getInitialState({
 })
 
 export const fetchProfile = createAsyncThunk('users/fetchProfile', async () => {
-  const response = await client.get('/fakeApi/getProfile')    
+  const response = await client.get('/cupist/build/fakeApi/getProfile')    
   return response.data
 })
 export const decisionUser = createAsyncThunk('users/decisionUser', async (state, action) => {
-  const response = await client.post('/fakeApi/decision', state)    
+  const response = await client.post('/cupist/build/fakeApi/decision', state)    
   return response.data
 })
 export const saveToServer = createAsyncThunk('users/saveToServer', async (state, action) => {
-  const response = await client.post('/fakeApi/save', state)    
+  const response = await client.post('/cupist/build/fakeApi/save', state)    
   return response.data
 })
 const profileSlice = createSlice({
