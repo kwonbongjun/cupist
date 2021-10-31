@@ -13,11 +13,11 @@ import {
   })
   
   export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
-    const response = await client.get('/cupist/build/fakeApi/getUsers')    
+    const response = await client.get('/fakeApi/getUsers')    
     return response.data
   })
   export const likeUser = createAsyncThunk('users/likeUser', async (state, action) => {
-    const response = await client.post('/cupist/build/fakeApi/like', state)    
+    const response = await client.post('/fakeApi/like', state)    
     return response.data
   })
   const usersSlice = createSlice({
