@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "./static/css/main.d5f93f5e.chunk.css",
-    "main.js": "./static/js/main.db4a7f38.chunk.js",
-    "main.js.map": "./static/js/main.db4a7f38.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.0f5a59d1.js",
-    "runtime-main.js.map": "./static/js/runtime-main.0f5a59d1.js.map",
-    "static/js/2.f8551f47.chunk.js": "./static/js/2.f8551f47.chunk.js",
-    "static/js/2.f8551f47.chunk.js.map": "./static/js/2.f8551f47.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.d5f93f5e.chunk.css.map": "./static/css/main.d5f93f5e.chunk.css.map",
-    "static/js/2.f8551f47.chunk.js.LICENSE.txt": "./static/js/2.f8551f47.chunk.js.LICENSE.txt",
-    "static/media/강새벽.41ea41fe.jpg": "./static/media/강새벽.41ea41fe.jpg",
-    "static/media/성기훈.a38016e8.jpg": "./static/media/성기훈.a38016e8.jpg",
-    "static/media/지영.7994834c.jpg": "./static/media/지영.7994834c.jpg",
-    "static/media/한미녀.6d2d3b18.jpg": "./static/media/한미녀.6d2d3b18.jpg"
+    "main.css": "/cupist/static/css/main.d5f93f5e.chunk.css",
+    "main.js": "/cupist/static/js/main.78c9b797.chunk.js",
+    "main.js.map": "/cupist/static/js/main.78c9b797.chunk.js.map",
+    "runtime-main.js": "/cupist/static/js/runtime-main.e4c1efee.js",
+    "runtime-main.js.map": "/cupist/static/js/runtime-main.e4c1efee.js.map",
+    "static/js/2.c0027a4f.chunk.js": "/cupist/static/js/2.c0027a4f.chunk.js",
+    "static/js/2.c0027a4f.chunk.js.map": "/cupist/static/js/2.c0027a4f.chunk.js.map",
+    "index.html": "/cupist/index.html",
+    "static/css/main.d5f93f5e.chunk.css.map": "/cupist/static/css/main.d5f93f5e.chunk.css.map",
+    "static/js/2.c0027a4f.chunk.js.LICENSE.txt": "/cupist/static/js/2.c0027a4f.chunk.js.LICENSE.txt",
+    "static/media/강새벽.41ea41fe.jpg": "/cupist/static/media/강새벽.41ea41fe.jpg",
+    "static/media/성기훈.a38016e8.jpg": "/cupist/static/media/성기훈.a38016e8.jpg",
+    "static/media/지영.7994834c.jpg": "/cupist/static/media/지영.7994834c.jpg",
+    "static/media/한미녀.6d2d3b18.jpg": "/cupist/static/media/한미녀.6d2d3b18.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0f5a59d1.js",
-    "static/js/2.f8551f47.chunk.js",
+    "static/js/runtime-main.e4c1efee.js",
+    "static/js/2.c0027a4f.chunk.js",
     "static/css/main.d5f93f5e.chunk.css",
-    "static/js/main.db4a7f38.chunk.js"
+    "static/js/main.78c9b797.chunk.js"
   ]
 }
